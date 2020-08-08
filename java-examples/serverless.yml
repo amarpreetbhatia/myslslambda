@@ -23,6 +23,8 @@ service: java-examples
 provider:
   name: aws
   runtime: java8
+  profile: serverless-admin
+  region: ap-southeast-2
 
 # you can overwrite defaults here
 #  stage: dev
