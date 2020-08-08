@@ -1,5 +1,5 @@
 Step 1 :
-serverless config credentials --provider aws --key <programaticKey> --secret <programaticSecret> --profile <IAM User> [document recommend's name serverless-admin]
+serverless config credentials --provider aws --key `programaticKey` --secret `programaticSecret` --profile `IAM User` [document recommend's name serverless-admin]
 
 Step 2:
 sls create --template aws-node --path hello-world
@@ -26,10 +26,11 @@ endpoints:
 functions:
   hello: hello-world-dev-hello
 layers:
-  None```
+  None
+```
 
 Step 5:
-sls invoke -f hello -l <hello is function name>
+sls invoke -f hello -l `hello is function name`
 
 Step 6:
 sls deploy function -f hello [This will not create cloudformation stack like `sls deploy -v`]
