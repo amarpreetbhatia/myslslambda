@@ -2,6 +2,8 @@
 
 module.exports.hello = async event => {
   console.log('Second update');
+  await new Promise(resolve => setTimeout(resolve, 5000));
+  // setInterval(() => console.log('timeout'), 4000);
   return {
     statusCode: 200,
     body: JSON.stringify(
